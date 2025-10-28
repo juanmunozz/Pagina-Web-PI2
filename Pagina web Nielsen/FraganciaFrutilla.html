@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragancia Frutilla — Producto | Niteco</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="container header-container">
+        <a href="#inicio" class="logo">
+            <img src="./assets/images/logo_niteco.png" alt="Logo Niteco">
+        </a>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#galeria">Productos más comprados</a></li>
+                <li><a href="Catalogo.html">Catálogo</a></li>
+                <li><a href="QuienesSomos.html">Quiénes Somos</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-icon">
+            <img src="./assets/images/icon_buscar.png" alt="Buscar">
+        </div>
+    </div>
+</header>
+
+
+    <main class="section container">
+        <div class="product-page">
+            <div class="product-image">
+                <img src="./assets/images/fragancia_frutilla.png" alt="Fragancia Frutilla">
+            </div>
+            <div class="product-info">
+                <h2>Fragancia Frutilla</h2>
+                <span class="price">$8.500 ARS</span>
+                <p>Dale un toque dulce y alegre a tus noches con nuestra Fragancia Frutilla. Su aroma frutal crea una atmósfera divertida y placentera que eleva el ánimo al instante.</p>
+                <p>Perfecta para quienes disfrutan de fragancias vibrantes y dulces. Cuando se combina con tu almohada FILMA, convierte tu descanso en un momento tan delicioso como único.</p>
+                <br>
+                <a href="#" class="card-button">Comprar</a>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <img src="./assets/images/logo_niteco.png" alt="Logo Niteco" class="footer-logo">
+            <p>© 2025 Niteco — Proyecto educativo 5°1°</p>
+            <div class="social-icons">
+                <a href="#">IG</a>
+                <a href="#">FB</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+    </footer>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+        console.log("✅ Menú abierto/cerrado");
+    });
+</script>
+</body>
+</html>
