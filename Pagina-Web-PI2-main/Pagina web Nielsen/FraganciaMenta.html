@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragancia Menta — Producto | Niteco</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="./assets/images/logo_niteco.png" alt="Logo Niteco">
+        </a>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#galeria">Productos más comprados</a></li>
+                <li><a href="Catalogo.html">Catálogo</a></li>
+                <li><a href="QuienesSomos.html">Quiénes Somos</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-icon">
+            <img src="./assets/images/icon_buscar.png" alt="Buscar">
+        </div>
+    </div>
+</header>
+
+
+    <main class="section container">
+        <div class="product-page">
+            <div class="product-image">
+                <img src="./assets/images/fragancia_menta.png" alt="Fragancia Menta">
+            </div>
+            <div class="product-info">
+                <h2>Fragancia Menta</h2>
+                <span class="price">$8.500 ARS</span>
+                <p>Refrescá tu descanso con la energía revitalizante de nuestra Fragancia Menta. Su aroma fresco y natural despeja la mente y ayuda a liberar tensiones acumuladas durante el día.</p>
+                <p>Ideal para quienes buscan una sensación de aire puro y claridad mental al momento de dormir. Combinada con tu almohada FILMA, transforma tu descanso en una experiencia revitalizadora.</p>
+                <br>
+                <a href="#" class="card-button">Comprar</a>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <img src="./assets/images/logo_niteco.png" alt="Logo Niteco" class="footer-logo">
+            <p>© 2025 Niteco — Proyecto educativo 5°1°</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/">IG</a>
+                <a href="https://www.facebook.com/">FB</a>
+                <a href="https://x.com/?lang=es">TW</a>
+            </div>
+        </div>
+    </footer>
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+        console.log("✅ Menú abierto/cerrado");
+    });
+</script>
+</body>
+</html>
