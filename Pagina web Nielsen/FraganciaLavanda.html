@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragancia Lavanda — Producto | Niteco</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- preconexion a google fonts para cargar mas rapido las fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- fuente decorativa usada solo para titulos -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <img src="./assets/images/logo_niteco.png" alt="Logo Niteco">
+        </a>
+
+        <!-- icono para menu responsive en pantallas chicas -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <!-- enlaces a secciones de la pagina -->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#galeria">Productos mas comprados</a></li>
+                <li><a href="Catalogo.html">Catalogo</a></li>
+                <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+            </ul>
+        </nav>
+
+        <!--icono de busqueda no funcional -->
+        <div class="search-icon">
+            <img src="./assets/images/icon_buscar.png" alt="Buscar">
+        </div>
+    </div>
+</header>
+
+
+<main class="section container">
+    <div class="product-page">
+        <div class="product-image">
+            <!-- imagen principal del producto -->
+            <img src="./assets/images/fragancia_lavanda.png" alt="Fragancia Lavanda">
+        </div>
+
+        <div class="product-info">
+            <h2>Fragancia Lavanda</h2><!--nombre del producto-->
+            <span class="price">$8.500 ARS</span><!-- precio-->
+
+            <!-- descripcion-->
+            <p>Sumergite en un sueño reparador con el aroma clásico y relajante de la Lavanda. Su fragancia suave ayuda a calmar la mente, reducir la tensión y crear un ambiente perfecto para desconectar después de un día largo.</p>
+            <p>Inspirada en la aromaterapia tradicional, esta esencia potencia la sensación de bienestar y favorece un descanso profundo cuando se combina con tu almohada FILMA. Ideal para quienes buscan tranquilidad, equilibrio y un aroma que invita a relajarse naturalmente.</p>
+            <br>
+
+            <!-- boton de compra -->
+            <a href="#" class="card-button">Comprar</a>
+        </div>
+    </div>
+</main>
+
+
+<footer class="footer">
+    <div class="container footer-container">
+        <img src="./assets/images/logo_niteco.png" alt="Logo Niteco" class="footer-logo">
+        <p>© 2025 Niteco — Proyecto educativo 5°1°</p>
+
+        <!-- enlaces a redes sociales -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/">IG</a>
+            <a href="https://www.facebook.com/">FB</a>
+            <a href="https://x.com/?lang=es">TW</a>
+        </div>
+    </div>
+</footer>
+    
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    /* toggle para abrir/cerrar el menu en celular */
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+        console.log("menu abierto/cerrado");
+    });
+</script>
+
+</body>
+</html>

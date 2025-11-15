@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragancia Frutilla — Producto | Niteco</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- cargar mas rapido las fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--fuente para titulos -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <!--logo-->
+            <img src="./assets/images/logo_niteco.png" alt="Logo Niteco">
+        </a>
+
+        <!-- menu hamburguesa para celulares -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <!-- cambiar entre secciones de la pagina-->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#galeria">Productos mas comprados</a></li>
+                <li><a href="Catalogo.html">Catalogo</a></li>
+                <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+            </ul>
+        </nav>
+
+        <!-- boton de busqueda no funcional -->
+        <div class="search-icon">
+            <img src="./assets/images/icon_buscar.png" alt="Buscar">
+        </div>
+    </div>
+</header>
+
+
+<main class="section container">
+    <div class="product-page">
+        <div class="product-image">
+            <!-- imagen principal del producto -->
+            <img src="./assets/images/fragancia_frutilla.png" alt="Fragancia Frutilla">
+        </div>
+
+        <div class="product-info">
+            <h2>Fragancia Frutilla</h2>
+            <span class="price">$8.500 ARS</span>
+
+            <!-- descripcion del producto -->
+            <p>Disfrutá un aroma dulce, fresco y lleno de energía. Nuestra Fragancia de Frutilla combina notas frutales suaves con un toque vibrante que transforma cualquier momento en una experiencia agradable y revitalizante.</p>
+            <p>Ideal para quienes buscan una esencia juvenil y positiva, perfecta para mejorar el ánimo, crear ambientes acogedores y acompañar tus momentos de descanso con una sensación dulce y reconfortante.</p>
+            <br>
+
+            <!-- boton compra -->
+            <a href="#" class="card-button">Comprar</a>
+        </div>
+    </div>
+</main>
+
+
+<footer class="footer">
+    <div class="container footer-container">
+        <!-- logo en el pie de pagina -->
+        <img src="./assets/images/logo_niteco.png" alt="Logo Niteco" class="footer-logo">
+        <p>© 2025 Niteco — Proyecto educativo 5°1°</p>
+
+        <!-- enlaces a redes sociales -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/">IG</a>
+            <a href="https://www.facebook.com/">FB</a>
+            <a href="https://x.com/?lang=es">TW</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    /* accion para abrir/cerrar el menu en dispositivos chicos */
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+        console.log("menu abierto/cerrado");
+    });
+</script>
+
+</body>
+</html>

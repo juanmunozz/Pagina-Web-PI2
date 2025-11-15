@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos — FILMA | Niteco</title>
+    <!-- fuentes y estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-container">
+        <!-- logo principal -->
+        <a href="index.html" class="logo">
+            <img src="./assets/images/logo_niteco.png" alt="Logo Niteco">
+        </a>
+
+        <!-- boton hamburguesa para menu responsive -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <!-- menu de navegacion -->
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#galeria">Productos más comprados</a></li>
+                <li><a href="Catalogo.html">Catálogo</a></li>
+                <li><a href="QuienesSomos.html">Quiénes Somos</a></li>
+            </ul>
+        </nav>
+
+        <!-- icono de busqueda sin funcion -->
+        <div class="search-icon">
+            <img src="./assets/images/icon_buscar.png" alt="Buscar">
+        </div>
+    </div>
+</header>
+
+    <!-- contenido principal -->
+    <main class="section container">
+        <div class="section-title">
+            <h2 class="lobster-font">Quiénes Somos</h2>
+            <p>En Niteco desarrollamos productos innovadores que combinan tecnología, confort y bienestar para mejorar tu descanso.</p>
+        </div>
+
+        <!-- descripcion de la empresa -->
+        <div class="about-content">
+            <p>Nuestro equipo está conformado por profesionales del diseño, la ingeniería y la tecnología, comprometidos en crear soluciones inteligentes para la vida cotidiana.</p>
+
+            <p>FILMA representa la unión entre ciencia y creatividad: una almohada que se adapta a tus necesidades, con la posibilidad de personalizarla y disfrutar de aromas naturales que te ayudan a relajarte.</p>
+
+            <p>Con orgullo argentino, trabajamos cada día para ofrecer productos de alta calidad y diseño, impulsando la innovación y el confort desde nuestra tierra.</p>
+        </div>
+   <br>
+
+        <!-- integrantes del proyecto -->
+        <div class="team-grid">
+            <div class="team-member">
+                <h3>Thomas Nielsen</h3>
+                <span>Gerente de Proyecto</span>
+            </div>
+            <div class="team-member">
+                <h3>Troncoso Fernando</h3>
+                <span>Diseño y Desarrollo</span>
+            </div>
+            <div class="team-member">
+                <h3>Milton Sivale</h3>
+                <span>Desarrollo y Marketing</span>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <!-- seccion mision y producto -->
+        <section class="mission-section">
+            <h2 class="lobster-font">Nuestra Misión</h2>
+            <p>En Niteco buscamos transformar la forma en que las personas descansan. Nuestra misión es integrar tecnología, diseño ergonómico y bienestar emocional en cada producto, mejorando la calidad del sueño y, con ello, la calidad de vida.</p>
+
+            <br>
+            <br>
+
+            <h2 class="lobster-font">Nuestro Objetivo</h2>
+            <p>Queremos posicionar a <strong>FILMA</strong> como un referente en innovación del descanso, ofreciendo una experiencia personalizada que combine confort, aroma y tecnología. Nos enfocamos en lograr que cada usuario disfrute noches de descanso profundo y revitalizante.</p>
+
+            <br>
+            <br>
+
+            <h2 class="lobster-font">El Producto: FILMA</h2>
+            <p><strong>FILMA</strong> es mucho más que una almohada: es una experiencia de descanso inteligente. Su diseño ergonómico se adapta de manera natural a la forma de tu cabeza y cuello, brindando soporte perfecto y reduciendo tensiones musculares.</p>
+
+            <p>Además, cuenta con un sistema aromático único que permite incorporar <strong>fragancias naturales</strong> a través de pequeños cartuchos de perfume intercambiables. Podés elegir entre una variedad de aromas —lavanda, eucalipto, vainilla, menta, entre otros— para crear el ambiente ideal según tu estado de ánimo o necesidad.</p>
+
+            <p>Con <strong>FILMA</strong>, dormir se convierte en una experiencia sensorial completa: comodidad, aroma y tecnología en perfecta armonía. Diseñada para quienes buscan más que descanso, buscan bienestar.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <img src="./assets/images/logo_niteco.png" alt="Logo Niteco" class="footer-logo">
+            <p>© 2025 Niteco — Proyecto educativo 5°1°</p>
+
+            <!-- redes sociales -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/">IG</a>
+                <a href="https://www.facebook.com/">FB</a>
+                <a href="https://x.com/?lang=es">TW</a>
+            </div>
+        </div>
+    </footer>
+    
+<script>
+    // script para abrir y cerrar menu responsive
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+        console.log("menu abierto/cerrado");
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo — Filma | Niteco</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- precarga de fuentes para acelerar la carga -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- fuente en titulos -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="container header-container">
+        <a href="index.html" class="logo">
+            <!-- logo superior -->
+            <img src="./assets/images/logo_niteco.png" alt="logo niteco">
+        </a>
+
+        <!-- boton hamburguesa para menu responsive -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <!-- enlaces principales de la pagina -->
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#galeria">Productos mas comprados</a></li>
+                <li><a href="Catalogo.html">Catalogo</a></li>
+                <li><a href="QuienesSomos.html">Quienes somos</a></li>
+            </ul>
+        </nav>
+
+        <!-- icono de busqueda -->
+        <div class="search-icon">
+            <img src="./assets/images/icon_buscar.png" alt="buscar">
+        </div>
+    </div>
+</header>
+
+
+<main class="section container">
+
+    <div class="section-title">
+        <!-- titulo destacado del catalogo -->
+        <h2 class="lobster-font">Catalogo Completo</h2>
+        <p>Explorá nuestra línea FILMA y encontrá el confort y aroma ideal para tu descanso.</p>
+    </div>
+
+    <div class="gallery-grid">
+        <!-- cada product-card es un producto independiente -->
+  
+        <div class="product-card">
+            <img src="./assets/images/producto_filma_1.png" alt="Filma Classic">
+            <h3>Filma Classic</h3>
+            <p>Confort tradicional con un soporte ergonómico que mejora tu descanso.</p>
+            <span class="price">$25.000 ars</span>
+            <!-- enlace a la pagina individual del producto -->
+            <a href="ProductoFilma1.html" class="card-button">Compra</a>
+        </div>
+
+        <div class="product-card">
+            <img src="./assets/images/producto_filma_2.png" alt="Filma Design">
+            <h3>Filma Design</h3>
+            <p>Personalizá tu almohada con diseños únicos y una funda hecha para tu estilo.</p>
+            <span class="price">$32.000 ars</span>
+            <a href="ProductoFilma2.html" class="card-button">Compra</a>
+        </div>
+
+        <!-- productos de fragancias -->
+        <div class="product-card">
+            <img src="./assets/images/fragancia_vainilla.png" alt="Fragancia Vainilla">
+            <h3>Fragancia Vainilla</h3>
+            <p>Aroma dulce y envolvente que convierte cada noche en un momento de calma.</p>
+            <span class="price">$8.500 ars</span>
+            <a href="FraganciaVainilla.html" class="card-button">Compra</a>
+        </div>
+
+        <div class="product-card">
+            <img src="./assets/images/fragancia_menta.png" alt="Fragancia Menta">
+            <h3>Fragancia Menta</h3>
+            <p>Un toque fresco que revitaliza tu descanso.</p>
+            <span class="price">$8.500 ars</span>
+            <a href="FraganciaMenta.html" class="card-button">Compra</a>
+        </div>
+
+        <div class="product-card">
+            <img src="./assets/images/fragancia_frutilla.png" alt="Fragancia Frutilla">
+            <h3>Fragancia Frutilla</h3>
+            <p>Fragancia frutal suave que aporta energía y calidez.</p>
+            <span class="price">$8.500 ars</span>
+            <a href="FraganciaFrutilla.html" class="card-button">Compra</a>
+        </div>
+
+        <div class="product-card">
+            <img src="./assets/images/fragancia_lavanda.png" alt="Fragancia Lavanda">
+            <h3>Fragancia Lavanda</h3>
+            <p>Aroma relajante ideal para conciliar un sueño profundo.</p>
+            <span class="price">$8.500 ars</span>
+            <a href="FraganciaLavanda.html" class="card-button">Compra</a>
+        </div>
+
+        <!-- tarjetas de fundas -->
+        <div class="product-card">
+            <img src="./assets/images/funda_liso.png" alt="Funda Liso">
+            <h3>Funda Liso</h3>
+            <p>Estilo minimalista que combina con cualquier ambiente.</p>
+            <span class="price">$12.000 ars</span>
+            <a href="FundaLiso.html" class="card-button">Compra</a>
+        </div>
+
+        <div class="product-card">
+            <img src="./assets/images/funda_rayado.png" alt="Funda Rayado">
+            <h3>Funda Rayado</h3>
+            <p>Diseño moderno con líneas elegantes y dinámicas.</p>
+            <span class="price">$12.000 ars</span>
+            <a href="FundaRayado.html" class="card-button">Compra</a>
+        </div>
+
+        <div class="product-card">
+            <img src="./assets/images/funda_floral.png" alt="Funda Floral">
+            <h3>Funda Floral</h3>
+            <p>Toque colorido para quienes buscan un estilo vibrante.</p>
+            <span class="price">$12.000 ars</span>
+            <a href="FundaFloral.html" class="card-button">Compra</a>
+        </div>
+
+        <div class="product-card">
+            <img src="./assets/images/funda_geometrica.png" alt="Funda Geométrica">
+            <h3>Funda Geométrica</h3>
+            <p>Dibujo con formas modernas para un diseño atractivo.</p>
+            <span class="price">$12.000 ars</span>
+            <a href="FundaGeometrica.html" class="card-button">Compra</a>
+        </div>
+    </div>
+</main>
+
+
+<footer class="footer">
+    <div class="container footer-container">
+        <!--logo inferior -->
+        <img src="./assets/images/logo_niteco.png" alt="logo niteco" class="footer-logo">
+        <p>© 2025 niteco — proyecto educativo 5°1°</p>
+
+        <!-- enlaces a redes sociales-->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/">ig</a>
+            <a href="https://www.facebook.com/">fb</a>
+            <a href="https://x.com/?lang=es">tw</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    /* abrir/cerrar menu hamburguesa */
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+        console.log("menu abierto/cerrado");
+    });
+</script>
+
+</body>
+</html>
